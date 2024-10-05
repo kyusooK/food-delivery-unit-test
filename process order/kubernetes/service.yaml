@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: process order
+  labels:
+    app: process order
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: process order
